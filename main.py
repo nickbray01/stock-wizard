@@ -1,0 +1,12 @@
+from PyQt5.QtWidgets import *
+app = QApplication([])
+window = QWidget()
+layout = QFormLayout()
+layout = QVBoxLayout()
+layout.addWidget(QLabel("Stock Ticker:"))
+layout.addWidget(QLineEdit())
+layout.addWidget(QPushButton('Options Screener'))
+layout.addWidget(QPushButton('Stock Analysis'))
+window.setLayout(layout)
+window.show()
+app.exec_()

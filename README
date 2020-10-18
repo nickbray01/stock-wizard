@@ -1,0 +1,20 @@
+Nick Bray stock option screener
+V 1.0.0
+Dependencies
+	-yahoo-fin
+	-PyQt5
+	-pandas
+	
+	
+Currently, a frontend is up for the home screen where you can enter the ticker and click to either Options analysis or stock analysis. Neither analysis exists yet.
+
+yahoo-fin is imported and working. get-stocks.py captures data from yahoo finance and returns a pandas dataframe. Right now, surface-level information is outputted to text to ensure workability.
+
+Next steps:
+	The most important screener for me is for covered calls. 
+	Want to start calculating:
+		-probability of execution for each contract
+		-breakeven
+		-time value of each contract (typically my strategy is to maximize TV)
+		-ROI
+		-annualized ROI
